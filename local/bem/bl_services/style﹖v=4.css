@@ -1,0 +1,40 @@
+.bl_servicesList_colDummy{
+  position: relative;
+  width:100%;
+  padding-bottom:80%;
+}
+.bl_servicesList_coltxt{
+  position: absolute;
+  width:100%;
+  height:100%;
+  vertical-align: middle;
+  color:wtite;
+  font-size:18px;
+  text-transform: uppercase;
+  text-align:center
+
+}
+@media (min-width:767px) and (max-width:992px){
+  .bl_servicesList_coltxt {
+    font-size:15px;
+  }
+}
+
+.bl_servicesList a{
+  color:white!important;
+
+}
+.bl_servicesList__a, .bl_servicesList_coltxt:hover {
+
+}
+
+.bl_servicesList__fader_servicesWifi{
+  background: rgba(6, 151, 232, 0.5);
+}
+
+.bl_servicesList__fader_servicesEth{
+  background: rgba(9, 232, 0, 0.5);
+}
+.bl_servicesList__fader_servicesTv{
+  background: rgba(232, 103, 0, 0.5);
+}

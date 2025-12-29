@@ -1,0 +1,93 @@
+
+
+
+/* Start:/local/templates/.default/components/bitrix/news/smit_news2/bitrix/news.list/.default/style.css*/
+
+.news1__itemscon{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction: row;
+	overflow:visible;
+	align-items:stretch;
+}
+.news1__prev_pic{
+	width:100%;
+	height:auto;
+
+}
+a.news1__link{
+	text-decoration:none;
+	color:#777777!important;
+}
+.news1__date {
+	color:#96c93f;
+	display:block;
+	padding:5px 0;
+	font-size:10px;line-height:12px;
+}
+.news1__item {
+	display:block;
+	width:25%;
+	padding:10px;
+	overflow:visible;
+	padding-bottom:10px;
+	text-align:left;
+	position:relative;
+}
+
+.news1__heading{
+	margin:10px 0;
+	color:#000000
+}
+.news1__item_inner {
+	display:block;
+	transition-duration:200ms;
+	position:relative;
+	background-color:#ffffff;
+
+}
+.news1__text{
+	padding:10px;
+	color:#888888;
+}
+.news1__item_inner:hover {
+	transform:scale(1.02,1.02);
+	box-shadow: 0 5px 12px rgba(0,0,0,0.5);
+	z-index:10000;
+}
+@media(max-width:767px){
+	 .news1__prev_pic {width:100%;height:auto}
+	 .news1__item {width:100%}
+}
+@media (min-width:767px) and (max-width:992px){
+	.news1__item {width:50%}
+}
+a.news1__more{
+	width:200px;
+	margin:20px auto 20px auto;
+	line-height:40px;
+	vertical-align:
+	middle;text-align:center;
+	display:block;
+	text-decoration:none;
+	background-color:#fefefe;
+	color:#777777!important;
+}
+a.news1__more:hover{
+	background-color:#96c93f;
+	color:#ffffff!important;
+}
+
+.news1__action_label{
+	position:absolute;
+	top:0px;right:0px;
+	width:80px;
+
+}
+
+.news1__item_inner, a.news1__more{
+	box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* End */
+/* /local/templates/.default/components/bitrix/news/smit_news2/bitrix/news.list/.default/style.css */

@@ -1,0 +1,18 @@
+li{
+  list-style-type: none;
+}
+
+.channel-list{
+
+  width:100%
+}
+.channelsList__img{
+  width:100%!important;
+}
+/* ресет стиля для шаблона битрикса, который вставляет тире перед элементами списка*/
+li:before {
+  content: none!important;
+}
+.bl_smotreshkaChannels .anchor{
+  position:relative
+}

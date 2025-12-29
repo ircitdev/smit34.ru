@@ -1,0 +1,284 @@
+
+/*region bl_colv1 --------*/
+
+/*region Использование*/
+/*endregion*/
+
+/*region Dependencies:{*/
+/*
+  blocks:{
+    bl_iconTxtV1 ;
+    add2cartBtn;
+    bl_price1;
+    bl_discount1;
+  }
+
+  Универсальные модификаторы:
+  vh_center_content;
+*/
+/*endregion }*/
+
+
+
+
+
+
+.bl_colv1{
+  position: relative;
+  margin-bottom:30px;
+  /* padding:20px; */
+  height:95%;
+
+  background-image: url("../../../images/present_sinnaps-crop-u23314%EF%B9%96crc=4237008101.png");
+  background-size: cover;
+  background-position: center;
+
+  color:black;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.bl_colv1__h1{
+  display:flex;
+  width:100%;
+  position: relative;
+  margin: 5px 0;
+}
+
+.bl_colv1__fader{
+  background-color: none;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.bl_colv1__labelPopular{
+  padding:5px;
+  background-color: red;
+  float:right;
+  position: relative;
+  border-radius: 5px;
+  color:#fff;
+  font-size: 16px;
+}
+
+
+/*region модификаторы подтипов блока colv1 --------*/
+
+
+
+
+/*region bl_colv1_type4 {{{{{{{{{{{{{{{*/
+
+
+
+
+
+
+.bl_colv1_type4{
+  position:relative;
+  top: 0;
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+  /* padding: 5%; */
+  margin: 0;
+  padding: 0;}
+
+.bl_colv1__bgImage_type4None{
+  background-image: none;
+}
+
+.bl_add2cartBtn_colv1type4{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* margin-top: -100px; */
+}
+
+.bl_colv1__type4Img{
+  width: 100%;
+  position: relative;
+  top:0;
+  left:0;
+  display: block;
+  margin: 0;
+}
+
+.bl_colv1__inner_type4{position: absolute;width: 100%;height: 100%;top: 0;left: 0;padding: 5%;}
+
+.bl_colv1__add2cartBtnContainer_type4{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+@media (max-width: 576px){
+
+  .bl_add2cartBtn_colv1type4{
+    line-height: 15px;
+
+  }
+
+}
+
+
+/*endregion}}}}}}}}}}}}}}}}}}}*/
+
+.bl_colv1_type4v1{
+  padding-bottom:150% ;
+}
+
+
+/*endregion*/
+
+
+/*region Конкретные блоки*/
+
+
+
+/*region bl_colv1_tarifVideo1*/
+.bl_colv1_tarif{
+  color:#fff;
+
+}
+
+.bl_colv1_tarifVideo1,.bl_colv1_tarifVideo2{
+  background-image: url("../../../images/%C3%91_%C3%90%C2%B5%C3%91_%C3%91_%C3%91_%C3%91_%2072@2x-80279x164%EF%B9%96crc=3916365202.jpg");
+  background-color: #2f2f2e;
+}
+
+.bl_colv1__fader_tarifVideo1, .bl_colv1__fader_tarifVideo2 {
+  background-color: #000;
+  opacity:0.6
+}
+
+
+.bl_colv1_tarifVideoUrLic, .bl_colv1_tarifVideoTSG{
+  background-image: none;
+}
+.bl_colv1__fader_tarifVideoUrLic, .bl_colv1__fader_tarifVideoTSG
+{
+  background-color: rgba(0,0,0,0.6);
+}
+/*endregion*/
+
+
+
+
+
+
+
+
+/*region bundleOptimalny*/
+
+
+
+.bl_colv1_bundleOptimalny {
+  color:#fff;
+  background: linear-gradient(to right,#80AD1F ,#DBCA00 100%);
+
+}
+.bl_colv1__fader_bundleOptimalny{
+  display:none;
+}
+
+
+
+
+/*endregion*/
+
+.bundleProstoyFader{
+  background-color: #D9E021;
+}
+.bl_colv1__fader_bundleDomashniy{
+  background-color: #8CC63F;
+  opacity: 0.75;
+}
+.bl_colv1__fader_bundleVseVkl{
+  background-color: #8CC63F;
+  opacity: 0.75;
+}
+.bl_colv1__fader_bundleDomashniyWifi{
+  background-color: #61BDFF;
+  opacity: 0.75;
+}
+.bl_colv1__fader_bundleVseVklWifi{
+  background-color: #0062C2;
+  opacity: 0.75;
+}
+
+.bl_pg2018101_tarifsWifi{
+  background-image: url("../../../index_img/tarifs_wifi_bg.png");
+
+}
+
+.bl_pg2018101_tarifsEth{
+  background-image: url("../../../images/smitethernet1%EF%B9%96crc=3975576247.jpg");
+
+}
+
+.bl_pg2018101_tarifsTv{
+  background-image: url("../../../images/bl1bg2-u14265-fr%EF%B9%96crc=4243261060.png");
+}
+
+.bl_servicesList__col{
+  padding-left:3%;
+  padd
+}
+
+.bl_add2cartBtn_colV2{
+
+}
+
+
+/*region prostoi ------*/
+.bl_colv1__fader_prostoi{
+  background-color:#8CC63F;
+  opacity:0.8
+}
+/*endregion*/
+
+/*region vsevkl -----*/
+
+.bl_colv1__fader_vsevkl{
+  background-color:#009245;
+  opacity:0.8
+
+}
+/*endregion*/
+
+/*region bundleVideo1 -------*/
+.bl_colv1_bundleVideo1{
+  background-image: url("../../../images/%C3%91_%C3%90%C2%B5%C3%91_%C3%91_%C3%91_%C3%91_%2072@2x-80279x164%EF%B9%96crc=3916365202.jpg");
+  background-color: #2f2f2e;
+  color:#fff;
+}
+.bl_colv1__fader_bundleVideo1{
+  background-color: #000;
+}
+
+/*endregion*/
+
+/*region bundleIgrovoy ------*/
+.bl_colv1_bundleIgrovoy {
+  color:#fff;
+  background: linear-gradient(to right, #5415FF, #CF352C 100%);
+}
+.bl_colv1__fader_bundleIgrovoy{
+  display:none;
+}
+/*endregion*/
+
+
+
+/*endregion*/
+
+
+
+/*endregion*/
+

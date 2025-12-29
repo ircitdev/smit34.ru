@@ -1,0 +1,321 @@
+*{
+  color:inherit;
+}
+h1{color:inherit;}
+
+
+
+
+
+/*region bl_pg2018101 (Переименовать в bl_pgRow) */
+
+
+
+
+
+.anchor_item{
+  position: absolute;top:0;
+}
+
+.bl_pg2018101{
+  /*display:flex;*/
+  align-items: center;
+  position:relative;
+  width:100%;
+  padding:30px 0px;
+  color:#000;
+
+  /* если паттерн:  bacrground-repeat:repeat */
+  overflow:hidden;
+  /*background-size: cover;/* растянуть фон по размеру контейнера ( CSS3! ) */
+  /*optional: */
+  /*min-height:600px; */
+  background-attachment: fixed; /* фон не скроллится вместе с содержимым */
+  background-position: center;
+  background-size: cover;
+}
+/*.bl_pg2018101 [class*="col-"]{*/
+/*margin-bottom:20px;*/
+/*}*/
+.bl_pg2018101 .container>div,.bl_pg2018101 .container>h1,.bl_pg2018101 .container>h2, .bl_pg2018101 .container>h3{
+  text-align:center;
+}
+.bl_pg2018101 .container>div>div{
+  text-align:left;
+}
+.bl_pg2018101 h1{
+  color:inherit;
+}
+.bl_pg2018101__col{
+  padding-bottom:20px
+}
+/*.bl_pg2018101>.container{*/
+/*padding-left:3%;*/
+/*padding-right:3% */
+/*}*/
+/*.bl_pg2018101>.row{ */
+/*margin-left:0;*/
+/*margin-right:0 */
+/*}*/
+/*.bl_pg2018101 [class*="col-"]{ */
+/*padding-left:3%;*/
+/*padding-right:3% */
+/*}*/
+
+
+
+
+/*region Модификаторы типов ------------------*/
+
+/* подобные классы позволят быстро создавать контрастирующие друг от друга блоки, визуально абстрагируя контент */
+
+/*region Темный блок ------*/
+
+
+
+
+
+.bl_pg2018101_dark{
+  color:#ffffff;
+  background-color:#777777;
+}
+
+.bl_pg2018101_dark h1, .bl_pg2018101_dark h2, .bl_pg2018101_dark h3 {
+  color:#fff;
+  position:relative;
+}
+
+.bl_pg2018101_dark .bl_pg2018101__bgFader{
+  position:absolute;
+  width:100%; height:100%;
+  background:rgba( 0, 0, 0, 0.5 );
+  top:0;
+  left:0
+}
+
+.bl_pg2018101_dark  {
+  color:white;
+}
+
+
+
+
+
+/*endregion Темный блок ------- */
+
+/*region светлый----------*/
+.bl_pg2018101_light{
+  color:#777777;
+  background-color:#ffffff
+}
+.bl_pg2018101_light .bl_pg2018101__bgFader{
+  position:absolute;
+  width:100%; height:100%;
+  background:rgba(255,255,255,0.8);
+}
+.bl_pg2018101_light {
+  color:black
+}
+/*endregion*/
+
+
+
+
+
+
+/*endregion*/
+
+/*endregion*/
+
+
+
+
+
+
+
+.bl_tarif{/* margin-top:20px; *//* margin-bottom:20px; */}
+
+
+/*region bl_colV2*/
+
+deps{
+.bl_add2cartBtn
+}
+.bl_colV2{
+  position: relative;
+  margin-bottom: 20px;
+  padding:10px 0;
+}
+.bl_colV2__fader{
+  background-color: #000;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+.bl_colV2__logo{
+
+}
+.bl_colV2__desc{}
+.bl_colV2__channels{}
+.bl_colV2__channelsIco{}
+.bl_colV2__channelsTxt{}
+.bl_colV2__price{}
+
+/*endregion*/
+
+
+
+/*region Модификаторы для конкретных блоков -----*/
+
+
+
+
+
+
+
+
+
+/*region Rows ---------*/
+
+
+
+
+
+
+
+
+
+
+/*region Блок услуг на главной*/
+
+.bl_pg2018101_block1{
+  background-image:url(../../../index_img/green-bg-u9098-fr.jpg);
+  background-color: #b5db5b;
+  min-height: 300px;
+}
+
+/*.bl_pg2018101__block1Services1{*/
+/*background-image:url(https://smit34.ru/index_img/services-1-u12821.png);*/
+/*background-size: cover;*/
+/*background-color: #b5db5b;*/
+/*height: 200px;*/
+/*}*/
+
+/*endregion*/
+
+
+.bl_pg2018101_block2{
+  background-image:url(../../../index_img/pros_bg.jpg);
+  background-color:white;
+  background-size:cover;
+}
+
+
+.bl_pg2018101_block3{
+  background-image:url(../../../index_img/home-29-u14556-fr.png);
+  background-color:white;
+  background-size:cover;
+}
+
+.bl_pg2018101_blockTarifsVideo{
+  background-image:url(../../../images/%C3%91_%C3%90%C2%B5%C3%91_%C3%91_%C3%91_%C3%91_%2072@2x-80%EF%B9%96crc=484488158.jpg);
+  background-color: #000;
+}
+.bl_pg2018101__bgFader_blockTarifsVideo{
+  position:absolute!important;
+  width:100%; height:100%!important;
+  background:rgba( 50, 50, 50, 0.9 )!important;
+  top:0!important;
+  left:0!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*endregion*/
+
+
+/*region cols -----------*/
+
+
+
+
+
+/*region модификаторы экземпляров bl_colv2*/
+.bl_colV2_dopChKino {
+  background-image: url("../../../images/fotolia-57999817-subscription-monthly-m%EF%B9%96crc=176454734.jpg");
+}
+.bl_colV2_dopChMatch{
+  background-color: #FF0000;
+}
+.bl_colV2_dopChFootball{
+  background-image: url("../../../images/banner-bg2%EF%B9%96crc=3844515375.jpg");
+
+}
+.bl_colV2_dopChDojd{
+  background-image: url("../../../images/original-efdab9d819f46756dcb970172109f9a5-crop-u29728_2x2.png") ;
+}
+.bl_colV2_dopChAmediateka {
+  background-color:black;
+}
+.bl_colV2_dopChNochnoy{
+  background-image: url("../../../images/nochnoy-1140200-2-crop-u300302.png") ;
+}
+/*endregion*/
+
+
+
+.bl_colv3_dopuslugi{
+  /*color:#000;*/
+  font-size:14px;
+  line-height: 15px;
+  /*background-color: rgba(255,255,255,0.6);*/
+  padding-top:10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+
+.bl_colv1__bgImage_type4Etoprosto{
+  /*background-image: url("../../../index_img/tarifs_etoprosto_2x.png");*/
+  background-image: none;
+}
+
+.bl_colv1__fader_tvTarifPromo{
+  background-color: #d89850;
+  opacity: 0.7;
+}
+.bl_colv1__fader_tvTarifBazovy{
+  background-color: #d85238;
+  opacity: 0.7;
+}
+.bl_colv1__fader_tvTarifSuperbaz{
+  background-color: #d81318;
+  opacity: 0.7;
+}
+
+
+
+/*endregion*/
+
+
+
+
+
+
+
+
+/*endregion Конкретные блоки*/
+
+
+

@@ -1,0 +1,1733 @@
+/* === ПРЕЛОАДЕР === */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://aida.smit34.ru/widget/pattern.jpg) repeat;
+  background-color: #1a1a2e;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#preloader.preloader-hide {
+  transform: translateY(100%);
+}
+
+.preloader-content {
+  text-align: center;
+  color: #fff;
+}
+
+.preloader-logo {
+  margin-bottom: 30px;
+  animation: preloader-pulse 1.5s ease-in-out infinite;
+}
+
+.preloader-logo img {
+  filter: drop-shadow(0 0 20px rgba(150, 201, 63, 0.5));
+}
+
+@keyframes preloader-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+.preloader-text {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #96c93f;
+  text-shadow: 0 0 20px rgba(150, 201, 63, 0.5);
+}
+
+.preloader-progress {
+  width: 200px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  margin: 0 auto 15px;
+  overflow: hidden;
+}
+
+.preloader-progress-bar {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #96c93f 0%, #7eb32d 100%);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px rgba(150, 201, 63, 0.8);
+}
+
+.preloader-percent {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+/* Контент сайта - скрыт до загрузки */
+#site-content {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+#site-content.site-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === КОНЕЦ ПРЕЛОАДЕРА === */
+
+.bl_footer2__logo {width: 75px!important;height: 62px!important;}.servicesCart_showhide {display: none!important;}
+  .bl_colv1_type4 video.bl_colv1__type4Img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    padding-bottom: 115px;
+    object-fit: contain;
+}
+
+      
+.bl_colv1.bl_colv1_type4.bl_colv1_.bl_colv1__bgImage_type4None {
+    background: #0000008a !important;
+}
+p.uk-text-right {
+    line-height: 1.4;
+}
+h2.uk-modal-title {
+    margin: 0.5em 0 0.4em !important;
+}
+.bl_pg2018101__bgFader_blockTarifsVideo {
+    background: rgba(50, 50, 50, 0.1) !important;
+}
+.uk-modal-dialog {
+    border-radius: 25px;
+    background: #cddc39a1 !important;
+}
+.uk-button-default {
+    background-color: #FFEB3B!important;
+    color: #333;
+    border-color: #fff7b3;
+}
+.servicesCart_container_outer.fader.animated.fadeInDownBig {
+    display: none;
+}
+/* === Separator between style blocks === */
+.aboutus {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #bbf17d;
+    color: 000;
+    font-size: 14px;
+    background-color: #96c93f;
+    background: url(/images/about_bg.png) bottom center no-repeat!important;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+      /* === УЛУЧШЕННАЯ ТИПОГРАФИКА === */
+      body {
+        font-smooth: always;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+
+      /* === 3D ЭФФЕКТ ДЛЯ ВСЕХ ЗАГОЛОВКОВ H1 === */
+      h1 {
+        letter-spacing: 0.5px;
+        font-weight: 700;
+        position: relative;
+
+        /* 3D текстовая тень */
+        text-shadow:
+          /* Слои для объема */
+          0 1px 0 #d0d0d0,
+          0 2px 0 #c8c8c8,
+          0 3px 0 #c0c0c0,
+          0 4px 0 #b8b8b8,
+          0 5px 0 #b0b0b0,
+          /* Мягкие тени */
+          0 6px 1px rgba(0,0,0,.15),
+          0 0 5px rgba(0,0,0,.1),
+          0 2px 5px rgba(0,0,0,.2),
+          0 5px 10px rgba(0,0,0,.15),
+          0 10px 15px rgba(0,0,0,.1);
+      }
+bl_colv1__inner_type4 {
+    background: #000000b5;
+}
+      /* === 3D ЭФФЕКТ ДЛЯ H2 === */
+      h2 {
+        letter-spacing: 0.3px;
+        font-weight: 700;
+        position: relative;
+        
+      }
+
+      h3 {
+        letter-spacing: -0.02em;
+        font-weight: 600;
+      }
+
+      p {
+        line-height: 1.7;
+        letter-spacing: 0.01em;
+      }
+
+      /* === ГРАДИЕНТЫ ДЛЯ КНОПОК === */
+      .bl_add2cartBtn {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        background: linear-gradient(135deg, #96c93f 0%, #7eb32d 100%);
+        box-shadow: 0 4px 15px rgba(150, 201, 63, 0.3);
+      }
+
+      .bl_add2cartBtn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+        transition: left 0.5s ease;
+      }
+
+      .bl_add2cartBtn:hover::before {
+        left: 100%;
+      }
+
+      .bl_add2cartBtn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(150, 201, 63, 0.5);
+        background: linear-gradient(135deg, #a0d449 0%, #88bd37 100%);
+      }
+
+      .bl_add2cartBtn:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 10px rgba(150, 201, 63, 0.3);
+      }
+
+      /* === ПУЛЬСАЦИЯ КНОПКИ "ПОДКЛЮЧИТЬСЯ" === */
+      .servicesCart__gotoCart {
+        position: relative;
+        animation: pulse-glow 2s ease-in-out infinite;
+      }
+
+      @keyframes wifi-attention {
+        0%, 100% {
+          box-shadow: 0 0 20px rgba(150, 201, 63, 0.3),
+                      0 0 40px rgba(150, 201, 63, 0.1);
+          transform: translateY(0);
+        }
+        50% {
+          box-shadow: 0 0 30px rgba(150, 201, 63, 0.5),
+                      0 0 60px rgba(150, 201, 63, 0.3);
+          transform: translateY(-5px);
+        }
+      }
+
+      @keyframes wifi-shine {
+        0% {
+          transform: rotate(0deg) translate(-50%, -50%);
+        }
+        100% {
+          transform: rotate(360deg) translate(-50%, -50%);
+        }
+      }
+
+      .wifi-router-special .bl_add2cartBtn {
+        animation: button-pulse 2s ease-in-out infinite;
+        background: linear-gradient(135deg, #96c93f 0%, #7eb32d 100%);
+        box-shadow: 0 4px 20px rgba(150, 201, 63, 0.5);
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      @keyframes button-pulse {
+        0%, 100% {
+          box-shadow: 0 4px 20px rgba(150, 201, 63, 0.5);
+        }
+        50% {
+          box-shadow: 0 4px 30px rgba(150, 201, 63, 0.8),
+                      0 0 40px rgba(150, 201, 63, 0.4);
+        }
+      }
+
+      .wifi-router-special .bl_add2cartBtn:hover {
+        animation: none;
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 8px 35px rgba(150, 201, 63, 0.7);
+      }
+
+      .wifi-router-special .bl_colv3__h1 {
+        color: #96c93f;
+        text-shadow: 0 2px 10px rgba(150, 201, 63, 0.3);
+        font-weight: bold;
+      }
+
+      /* === БЕЙДЖ "СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ" === */
+      .wifi-special-badge {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+        color: white;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: uppercase;
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.5);
+        z-index: 10;
+        animation: badge-bounce 2s ease-in-out infinite;
+        letter-spacing: 0.5px;
+      }
+
+      @keyframes badge-bounce {
+        0%, 100% {
+          transform: translateY(0) scale(1);
+        }
+        50% {
+          transform: translateY(-5px) scale(1.05);
+        }
+      }
+
+      .wifi-special-badge::before {
+        content: '⭐';
+        margin-right: 5px;
+        animation: star-rotate 2s linear infinite;
+        display: inline-block;
+      }
+
+      @keyframes star-rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* === АНИМАЦИЯ ЦИФР В ЦЕНАХ === */
+      .animated-price {
+        display: inline-block;
+        font-weight: bold;
+        background: linear-gradient(135deg, #96c93f 0%, #7eb32d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      /* === 3D ЭФФЕКТ ДЛЯ ЗАГОЛОВКОВ ТАРИФОВ === */
+      .bl_tarifElem1__heading {
+        font-weight: 800 !important;
+        letter-spacing: 1px !important;
+        text-transform: uppercase !important;
+
+        /* Выразительная 3D тень */
+        text-shadow:
+          /* Основные слои */
+          0 1px 0 rgba(200,200,200,0.8),
+          0 2px 0 rgba(190,190,190,0.7),
+          0 3px 0 rgba(180,180,180,0.6),
+          0 4px 0 rgba(170,170,170,0.5),
+          0 5px 0 rgba(160,160,160,0.4),
+          0 6px 0 rgba(150,150,150,0.3),
+          /* Глубокие тени */
+          0 8px 10px rgba(0,0,0,0.2),
+          0 12px 20px rgba(0,0,0,0.15),
+          0 16px 30px rgba(0,0,0,0.1),
+          /* Подсветка */
+          0 0 20px rgba(150, 201, 63, 0.3),
+          0 0 40px rgba(150, 201, 63, 0.1) !important;
+
+        /* Градиентная заливка */
+        background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 40%, #e8e8e8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+
+        transition: all 0.3s ease !important;
+      }
+
+      .bl_tarifElem1:hover .bl_tarifElem1__heading {
+        transform: translateY(-3px) scale(1.05);
+        text-shadow:
+          0 1px 0 rgba(200,200,200,0.8),
+          0 2px 0 rgba(190,190,190,0.7),
+          0 3px 0 rgba(180,180,180,0.6),
+          0 4px 0 rgba(170,170,170,0.5),
+          0 5px 0 rgba(160,160,160,0.4),
+          0 6px 0 rgba(150,150,150,0.3),
+          0 10px 15px rgba(0,0,0,0.25),
+          0 15px 25px rgba(0,0,0,0.2),
+          0 20px 40px rgba(0,0,0,0.15),
+          0 0 30px rgba(150, 201, 63, 0.5),
+          0 0 60px rgba(150, 201, 63, 0.2) !important;
+      }
+
+      /* === УЛУЧШЕННЫЕ КАРТОЧКИ ТАРИФОВ === */
+      .bl_colv1_type4, .bl_colV2, .bl_colv3 {
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .bl_colv1_type4:hover, .bl_colV2:hover, .bl_colv3:hover {
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+      }
+
+      /* === ВЫРАВНИВАНИЕ КНОПОК ПО НИЖНЕМУ КРАЮ === */
+      /* Родительские колонки - flexbox контейнеры */
+      .bl_pg2018101_tarifsWifi .bl_tarif,
+      .bl_pg2018101_tarifsEth .bl_pg2018101__col {
+        display: flex !important;
+        flex-direction: column;
+      }
+
+      /* Карточки растягиваются на всю высоту */
+      .bl_pg2018101_tarifsWifi .bl_colv1_type4,
+      .bl_pg2018101_tarifsEth .bl_colv1_type4 {
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100% !important;
+      }
+
+      /* Внутренний контейнер прижимается к низу */
+      .bl_pg2018101_tarifsWifi .bl_colv1__inner_type4,
+      .bl_pg2018101_tarifsEth .bl_colv1__inner_type4 {
+        margin-top: auto !important;
+        position: relative !important;
+      }
+
+      /* Контейнер кнопки растягивается */
+      .bl_pg2018101_tarifsWifi .bl_colv1__add2cartBtnContainer_type4,
+      .bl_pg2018101_tarifsEth .bl_colv1__add2cartBtnContainer_type4 {
+        margin-top: auto;
+      }
+
+      /* === АНИМАЦИЯ ДЛЯ ИКОНОК === */
+      .bl_servicesList_colDummy {
+        transition: all 0.3s ease;
+      }
+
+      .bl_servicesList_colDummy:hover {
+        filter: brightness(1.1);
+      }
+
+      /* === УЛУЧШЕННЫЕ ЗАГОЛОВКИ С 3D ЭФФЕКТОМ === */
+      .bl_pg2018101__h1 h1 {
+        position: relative;
+        padding-bottom: 15px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        /* Многослойная тень для 3D эффекта */
+        text-shadow:
+          /* Основная тень */
+          0 1px 0 #ccc,
+          0 2px 0 #c9c9c9,
+          0 3px 0 #bbb,
+          0 4px 0 #b9b9b9,
+          0 5px 0 #aaa,
+          0 6px 1px rgba(0,0,0,.1),
+          /* Глубокая тень */
+          0 0 5px rgba(0,0,0,.1),
+          0 1px 3px rgba(0,0,0,.3),
+          0 3px 5px rgba(0,0,0,.2),
+          0 5px 10px rgba(0,0,0,.25),
+          0 10px 10px rgba(0,0,0,.2),
+          0 20px 20px rgba(0,0,0,.15);
+
+        /* Градиент для текста */
+        background: linear-gradient(180deg, #fff 0%, #f0f0f0 50%, #e0e0e0 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+
+        /* Легкая анимация */
+        transition: all 0.3s ease;
+      }
+
+      .bl_pg2018101__h1 h1:hover {
+        transform: translateY(-2px);
+        text-shadow:
+          0 1px 0 #ccc,
+          0 2px 0 #c9c9c9,
+          0 3px 0 #bbb,
+          0 4px 0 #b9b9b9,
+          0 5px 0 #aaa,
+          0 6px 1px rgba(0,0,0,.1),
+          0 0 5px rgba(0,0,0,.1),
+          0 1px 3px rgba(0,0,0,.3),
+          0 3px 5px rgba(0,0,0,.2),
+          0 5px 10px rgba(0,0,0,.25),
+          0 12px 15px rgba(0,0,0,.2),
+          0 25px 30px rgba(0,0,0,.2);
+      }
+
+      /* Подчеркивание с 3D эффектом */
+      .bl_pg2018101__h1 h1::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 6px;
+        background: linear-gradient(135deg, #96c93f 0%, #7eb32d 100%);
+        border-radius: 3px;
+        box-shadow:
+          0 2px 4px rgba(150, 201, 63, 0.3),
+          0 4px 8px rgba(150, 201, 63, 0.2),
+          0 8px 16px rgba(150, 201, 63, 0.1);
+      }
+
+      /* Для темных секций - инвертируем цвета */
+      .bl_pg2018101_dark .bl_pg2018101__h1 h1 {
+        background: linear-gradient(180deg, #fff 0%, #f5f5f5 50%, #e8e8e8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+
+        text-shadow:
+          0 1px 0 rgba(255,255,255,0.2),
+          0 2px 0 rgba(255,255,255,0.18),
+          0 3px 0 rgba(255,255,255,0.15),
+          0 4px 0 rgba(255,255,255,0.12),
+          0 5px 0 rgba(255,255,255,0.1),
+          0 6px 1px rgba(0,0,0,.3),
+          0 0 5px rgba(0,0,0,.2),
+          0 1px 3px rgba(0,0,0,.4),
+          0 3px 5px rgba(0,0,0,.3),
+          0 5px 10px rgba(0,0,0,.3),
+          0 10px 10px rgba(0,0,0,.25),
+          0 20px 20px rgba(0,0,0,.2);
+      }
+
+      /* === КНОПКА "НАВЕРХ" === */
+      .scroll-to-top {
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(135deg, #96c93f 0%, #7eb32d 100%);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        box-shadow: 0 4px 20px rgba(150, 201, 63, 0.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 9999;
+      }
+
+      .scroll-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .scroll-to-top:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(150, 201, 63, 0.6);
+      }
+
+      /* === ВИРТУАЛЬНЫЙ АССИСТЕНТ В ШАПКЕ === */
+      .phone__assistant {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 1;
+        color: #fff !important;
+        margin-top: 6px;
+        font-weight: 600;
+        text-decoration: none !important;
+        background: linear-gradient(135deg, #FF9800 0%, #FFC107 100%);
+        padding: 8px 16px;
+        border-radius: 20px;
+        box-shadow: 0 3px 12px rgba(255, 152, 0, 0.4);
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        animation: assistant-pulse 3s ease-in-out infinite;
+        letter-spacing: 0.3px;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+
+      .phone__assistant::before {
+        content: '💬';
+        margin-right: 6px;
+        font-size: 14px;
+        animation: message-bounce 1.5s ease-in-out infinite;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      /* На мобильных устройствах показываем иконку телефона */
+      @media (max-width: 768px) {
+        .phone__assistant::before {
+          content: '📞';
+        }
+      }
+
+      /* === АНИМАЦИЯ ТАРИФНЫХ БЛОКОВ === */
+      .bl_tarif {
+        position: relative;
+        transition: all 0.4s ease;
+      }
+
+      .bl_tarif .bl_colv1 {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        animation: tarif-float 4s ease-in-out infinite;
+      }
+
+      @keyframes tarif-float {
+        0%, 100% {
+          transform: translateY(0);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        50% {
+          transform: translateY(-10px);
+          box-shadow: 0 8px 30px rgba(150, 201, 63, 0.3);
+        }
+      }
+
+      .bl_tarif .bl_colv1:hover {
+        transform: translateY(-15px) scale(1.03);
+        box-shadow: 0 15px 45px rgba(150, 201, 63, 0.4);
+        animation: none;
+      }
+
+      /* Пульсирующая рамка */
+      .bl_tarif .bl_colv1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 15px;
+        border: 3px solid transparent;
+        animation: border-pulse 3s ease-in-out infinite;
+        z-index: 1;
+        pointer-events: none;
+      }
+
+      @keyframes border-pulse {
+        0%, 100% {
+          border-color: rgba(150, 201, 63, 0);
+        }
+        50% {
+          border-color: rgba(150, 201, 63, 0.8);
+        }
+      }
+
+      /* Светящийся эффект сверху */
+      .bl_tarif .bl_colv1::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+          45deg,
+          transparent 30%,
+          rgba(150, 201, 63, 0.15) 50%,
+          transparent 70%
+        );
+        animation: tarif-shine 5s linear infinite;
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      @keyframes tarif-shine {
+        0% {
+          transform: translateX(-100%) translateY(-100%) rotate(45deg);
+        }
+        100% {
+          transform: translateX(100%) translateY(100%) rotate(45deg);
+        }
+      }
+
+      /* Улучшенная кнопка "Подключить" в тарифах */
+      .bl_tarif .bl_add2cartBtn_colv1type4 {
+        animation: tarif-button-pulse 2.5s ease-in-out infinite;
+        position: relative;
+        z-index: 3;
+      }
+
+      @keyframes tarif-button-pulse {
+        0%, 100% {
+          box-shadow: 0 4px 15px rgba(150, 201, 63, 0.4);
+        }
+        50% {
+          box-shadow: 0 4px 25px rgba(150, 201, 63, 0.7),
+                      0 0 35px rgba(150, 201, 63, 0.4);
+        }
+      }
+
+      .bl_tarif .bl_add2cartBtn_colv1type4:hover {
+        animation: none;
+        transform: scale(1.1) translateY(-2px);
+        box-shadow: 0 8px 30px rgba(150, 201, 63, 0.8);
+      }
+
+      /* Специальный бейдж для популярного тарифа */
+      .bl_tarif.tarif-featured::before {
+        content: '🔥 Популярный выбор';
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+        color: white;
+        padding: 8px 20px;
+        border-radius: 25px;
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.5);
+        z-index: 10;
+        animation: badge-glow 2s ease-in-out infinite;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+      }
+
+      /* На мобильных устройствах делаем бейдж компактнее */
+      @media (max-width: 768px) {
+        .bl_tarif.tarif-featured::before {
+          font-size: 11px;
+          padding: 6px 14px;
+          letter-spacing: 0.3px;
+        }
+      }
+
+      @keyframes badge-glow {
+        0%, 100% {
+          box-shadow: 0 4px 15px rgba(255, 107, 107, 0.5);
+        }
+        50% {
+          box-shadow: 0 4px 25px rgba(255, 107, 107, 0.8),
+                      0 0 30px rgba(255, 107, 107, 0.4);
+        }
+      }
+
+      /* Усиленный эффект для первого тарифа */
+      .bl_tarif.tarif-featured .bl_colv1 {
+        animation: tarif-float-featured 3s ease-in-out infinite;
+      }
+
+      @keyframes tarif-float-featured {
+        0%, 100% {
+          transform: translateY(0);
+          box-shadow: 0 4px 25px rgba(150, 201, 63, 0.3);
+        }
+        50% {
+          transform: translateY(-12px);
+          box-shadow: 0 10px 40px rgba(150, 201, 63, 0.5);
+        }
+      }
+
+      .phone__assistant::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        transform: translate(-50%, -50%);
+        transition: width 0.5s, height 0.5s;
+      }
+
+      .phone__assistant:hover::after {
+        width: 200px;
+        height: 200px;
+      }
+
+      .phone__assistant:hover {
+        color: #fff !important;
+        text-decoration: none !important;
+        transform: translateY(-2px) scale(1.03);
+        box-shadow: 0 6px 20px rgba(255, 152, 0, 0.6);
+        animation: none;
+      }
+
+      .phone__assistant:active {
+        transform: translateY(-1px) scale(1.01);
+        box-shadow: 0 3px 12px rgba(255, 152, 0, 0.5);
+      }
+
+      @keyframes assistant-pulse {
+        0%, 100% {
+          box-shadow: 0 3px 12px rgba(255, 152, 0, 0.4);
+        }
+        50% {
+          box-shadow: 0 3px 20px rgba(255, 152, 0, 0.65),
+                      0 0 25px rgba(255, 193, 7, 0.25);
+        }
+      }
+
+      @keyframes message-bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-2px);
+        }
+      }
+
+      /* === ПЛАВНАЯ ПРОКРУТКА === */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* === АНИМАЦИЯ ДЛЯ ЦИФР КАНАЛОВ === */
+      .bl_tarifElem1__channels {
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .bl_tarifElem1:hover .bl_tarifElem1__channels {
+        transform: scale(1.1);
+        color: #96c93f;
+      }
+
+      /* === УЛУЧШЕННЫЕ ЦЕНЫ === */
+      .bl_tarifElem1__price, .bl_colV2__price {
+        font-weight: 800;
+        position: relative;
+        transition: all 0.3s ease;
+        color: #FFD700 !important;
+        text-shadow:
+          3px 3px 8px rgba(0, 0, 0, 0.95),
+          0 0 15px rgba(0, 0, 0, 0.9),
+          -2px -2px 0 rgba(0, 0, 0, 1),
+          2px -2px 0 rgba(0, 0, 0, 1),
+          -2px 2px 0 rgba(0, 0, 0, 1),
+          2px 2px 0 rgba(0, 0, 0, 1) !important;
+      }
+
+      .bl_colv1:hover .bl_tarifElem1__price,
+      .bl_colV2:hover .bl_colV2__price {
+        transform: scale(1.05);
+      }
+
+      /* === ИНДИКАТОР ПРОГРЕССА ЧТЕНИЯ === */
+      .reading-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #96c93f 0%, #7eb32d 100%);
+        z-index: 99999;
+        transition: width 0.1s ease;
+      }
+
+      /* === ЭФФЕКТ ДЛЯ ПОПУЛЯРНОГО ТАРИФА === */
+      .bl_colv1__labelPopular {
+        animation: badge-pulse 2s ease-in-out infinite;
+      }
+
+      @keyframes badge-pulse {
+        0%, 100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      /* === УЛУЧШЕННЫЙ БЛИК ДЛЯ TILT === */
+      .js-tilt-glare {
+        border-radius: 12px;
+      }
+
+      /* === АНИМАЦИЯ ПОЯВЛЕНИЯ БЛОКОВ === */
+      [data-aos] {
+        pointer-events: none;
+      }
+
+      [data-aos].aos-animate {
+        pointer-events: auto;
+      }
+
+      /* === АДАПТИВНОСТЬ === */
+      @media (max-width: 768px) {
+        .scroll-to-top {
+          bottom: 20px;
+          left: 20px;
+          width: 45px;
+          height: 45px;
+          font-size: 20px;
+        }
+
+        /* Упрощенный 3D эффект для мобильных */
+        h1 {
+          text-shadow:
+            0 1px 0 #d0d0d0,
+            0 2px 0 #c8c8c8,
+            0 3px 0 #c0c0c0,
+            0 4px 5px rgba(0,0,0,.15),
+            0 2px 5px rgba(0,0,0,.1);
+        }
+
+        h2 {
+          text-shadow:
+            0 1px 0 #d8d8d8,
+            0 2px 0 #d0d0d0,
+            0 3px 3px rgba(0,0,0,.1);
+        }
+
+        .bl_pg2018101__h1 h1 {
+          text-shadow:
+            0 1px 0 #ccc,
+            0 2px 0 #c9c9c9,
+            0 3px 0 #bbb,
+            0 4px 5px rgba(0,0,0,.2),
+            0 2px 5px rgba(0,0,0,.15);
+        }
+
+        .bl_tarifElem1__heading {
+          text-shadow:
+            0 1px 0 rgba(200,200,200,0.8),
+            0 2px 0 rgba(190,190,190,0.7),
+            0 3px 0 rgba(180,180,180,0.6),
+            0 5px 8px rgba(0,0,0,0.15),
+            0 0 15px rgba(150, 201, 63, 0.2) !important;
+        }
+      }
+      
+
+/* === Separator between style blocks === */
+
+
+         .notice-modal {
+         background: #fff;
+         border-radius: 14px;
+         box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+         padding: 20px 22px 18px;
+         max-width: 640px;
+         width: 100%;
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+         line-height: 1.45;
+         }
+         .notice-header {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         margin-bottom: 14px;
+         }
+         .notice-title {
+         display: inline-flex;
+         align-items: center;
+         gap: 6px;
+         background: rgba(244, 67, 54, 0.12);
+         color: #d32f2f;
+         font-weight: 600;
+         padding: 6px 14px 7px;
+         border-radius: 999px;
+         font-size: 14px;
+         }
+         .notice-body p {
+         margin: 0 0 10px;
+         font-size: 14px;
+         color: #263238;
+         }
+         .uk-modal.uk-open {
+         z-index: 9999999;
+         }
+         .uk-modal-body {
+         padding: 1px 15px;
+         }
+         .notice-body a {
+         color: #1976d2;
+         text-decoration: underline;
+         text-underline-offset: 3px;
+         }
+         .notice-footer-text {
+         margin-top: 14px;
+         font-weight: 600;
+         color: #1b5e20;
+         }
+         @media (max-width: 480px) {
+         .notice-modal {
+         padding: 16px 14px 14px;
+         border-radius: 10px;
+         }
+         .notice-body p {
+         font-size: 13px;
+         }
+         }
+         
+
+/* === Separator between style blocks === */
+
+.aboutus{width:100%; padding:40px 0; background-color:#bbf17d; color:000; font-size:14px; background-color:#96c93f; background:url('/assets_section/company1%EF%B9%96v=4.jpg') center center no-repeat; background-size:cover; background-attachment:fixed}.aboutus__text{columns:3;text-align:left}@media(max-width:767px){.aboutus__text{columns:1;}}@media (min-width:767px) and (max-width:992px){.aboutus__text{columns:2;}}.aboutus__text p{padding-bottom:10px}
+
+/* === Separator between style blocks === */
+
+
+                  .telegram-btn {
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 12px 24px;
+                  background-color: #0088cc;
+                  color: white;
+                  text-decoration: none;
+                  border-radius: 50px;
+                  font-family: 'Arial', sans-serif;
+                  font-weight: 600;
+                  font-size: 16px;
+                  transition: all 0.3s ease;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                  border: none;
+                  cursor: pointer;
+                  }
+                  
+                  .telegram-btn:hover {
+                  background-color: #0077b5;
+                  transform: translateY(-2px);
+                  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+                  }
+                  
+                  .telegram-btn:active {
+                  transform: translateY(0);
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                  }
+                  
+                  .telegram-icon {
+                  width: 20px;
+                  height: 20px;
+                  margin-right: 10px;
+                  fill: currentColor;
+                  }
+
+                  /* VK Button */
+                  .vk-btn {
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 12px 24px;
+                  background-color: #0077FF;
+                  color: white;
+                  text-decoration: none;
+                  border-radius: 50px;
+                  font-family: 'Arial', sans-serif;
+                  font-weight: 600;
+                  font-size: 16px;
+                  transition: all 0.3s ease;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                  border: none;
+                  cursor: pointer;
+                  }
+
+                  .vk-btn:hover {
+                  background-color: #0066DD;
+                  transform: translateY(-2px);
+                  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+                  color: white;
+                  text-decoration: none;
+                  }
+
+                  .vk-btn:active {
+                  transform: translateY(0);
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                  }
+
+                  .vk-icon {
+                  width: 20px;
+                  height: 20px;
+                  margin-right: 10px;
+                  fill: currentColor;
+                  }
+
+                  /* Email Button */
+                  .email-btn {
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 12px 24px;
+                  background-color: #96c93f;
+                  color: white;
+                  text-decoration: none;
+                  border-radius: 50px;
+                  font-family: 'Arial', sans-serif;
+                  font-weight: 600;
+                  font-size: 16px;
+                  transition: all 0.3s ease;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                  border: none;
+                  cursor: pointer;
+                  }
+
+                  .email-btn:hover {
+                  background-color: #7eb32d;
+                  transform: translateY(-2px);
+                  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+                  color: white;
+                  text-decoration: none;
+                  }
+
+                  .email-btn:active {
+                  transform: translateY(0);
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                  }
+
+                  .email-icon {
+                  width: 20px;
+                  height: 20px;
+                  margin-right: 10px;
+                  fill: currentColor;
+                  }
+                  .bl_footer3__logo {
+                  margin-top: -110px;
+                  margin-left: 210px;
+                  width: 120px;
+                  height: 102px;
+                  background: url(https://smit34.ru/upload/medialibrary/f86/f86fb52ca88dd8a6182cd5316b2b1c23.png) right top no-repeat;
+                  background-size: cover;
+                  }
+                  
+
+/* === Separator between style blocks === */
+
+/* === УЛУЧШЕННОЕ МОБИЛЬНОЕ МЕНЮ === */
+@media (max-width: 767px) {
+  /* Кнопка гамбургер меню */
+  .topmenu__mbtn {
+    background: linear-gradient(135deg, #96c93f 0%, #7eb32d 100%) !important;
+    border-radius: 8px !important;
+    cursor: pointer;
+    transition: all 0.3s ease !important;
+  }
+
+  .topmenu__mbtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(150, 201, 63, 0.4) !important;
+  }
+
+  .topmenu__mbtn:active {
+    transform: scale(0.95);
+  }
+
+  .topmenu__mbtn.topmenu__mbtn-active {
+    display: none;
+  }
+
+  /* Backdrop - затемнение фона */
+  .topmenu__wrap::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: -1;
+  }
+
+  .topmenu__wrap-active::before {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  /* Контент меню должен быть кликабельным */
+  #top-menu,
+  .topmenu2lv,
+  #top-menu li,
+  #top-menu a,
+  .topmenu2lv a {
+    position: relative;
+    z-index: 100;
+  }
+
+  /* Само меню */
+  .topmenu__wrap,
+  div.topmenu__wrap,
+  body .topmenu__wrap {
+    position: fixed !important;
+    top: 0 !important;
+    right: -100% !important;
+    width: 85% !important;
+    max-width: 400px !important;
+    height: 100vh !important;
+    background: linear-gradient(135deg, #f8fffe 0%, #e8f5e9 30%, #c8e6c9 70%, #a5d6a7 100%) !important;
+    background-color: transparent !important;
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.3) !important;
+    overflow-y: auto !important;
+    z-index: 10001 !important;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    padding: 80px 0 40px 0 !important;
+    transform: none !important;
+  }
+
+  .topmenu__wrap * {
+    box-sizing: border-box !important;
+  }
+
+  .topmenu__wrap-active,
+  div.topmenu__wrap-active,
+  body .topmenu__wrap-active {
+    right: 0 !important;
+    background: linear-gradient(135deg, #f8fffe 0%, #e8f5e9 30%, #c8e6c9 70%, #a5d6a7 100%) !important;
+    background-color: transparent !important;
+    transform: none !important;
+  }
+
+  /* Убираем белый фон у контейнеров внутри меню */
+  .topmenu__wrap #top-menu,
+  .topmenu__wrap .top-menu,
+  .topmenu__wrap .topmenu2lv,
+  .topmenu__wrap #footer-links {
+    background: transparent !important;
+  }
+
+  /* Пункты меню */
+  #top-menu li {
+    border-bottom: 1px solid rgba(150, 201, 63, 0.3) !important;
+    animation: slideInRight 0.3s ease forwards;
+    opacity: 0;
+    background: transparent !important;
+  }
+
+  #top-menu li:nth-child(1) { animation-delay: 0.05s; }
+  #top-menu li:nth-child(2) { animation-delay: 0.1s; }
+  #top-menu li:nth-child(3) { animation-delay: 0.15s; }
+  #top-menu li:nth-child(4) { animation-delay: 0.2s; }
+  #top-menu li:nth-child(5) { animation-delay: 0.25s; }
+  #top-menu li:nth-child(6) { animation-delay: 0.3s; }
+  #top-menu li:nth-child(7) { animation-delay: 0.35s; }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  #top-menu a {
+    display: block !important;
+    padding: 18px 24px !important;
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    color: #212529 !important;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: none !important;
+    margin: 0 !important;
+    transition: all 0.2s ease !important;
+    position: relative !important;
+    text-decoration: none !important;
+  }
+
+  #top-menu a:hover {
+    background: rgba(255, 255, 255, 0.5) !important;
+    color: #2e7d32 !important;
+  }
+
+  #top-menu a:active,
+  #top-menu a:focus {
+    background: rgba(255, 255, 255, 0.7) !important;
+    outline: none !important;
+  }
+
+  #top-menu li.selected a {
+    background: #96c93f !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    padding: 18px 24px !important;
+    border: none !important;
+    border-bottom: none !important;
+  }
+
+  /* Скрываем старые border радиусы */
+  #top-menu b.r0,
+  #top-menu b.r1 {
+    display: none !important;
+  }
+
+  /* Второй уровень меню */
+  .topmenu2lv {
+    margin-top: 30px !important;
+    padding-top: 20px !important;
+    border-top: 2px solid #e9ecef !important;
+    background: transparent !important;
+  }
+
+  .topmenu2lv ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .topmenu2lv li {
+    border-bottom: 1px solid #f1f3f5 !important;
+  }
+
+  .topmenu2lv a {
+    display: block !important;
+    padding: 14px 24px !important;
+    font-size: 14px !important;
+    color: #495057 !important;
+    background: transparent !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .topmenu2lv a:hover {
+    background: #f8f9fa !important;
+    color: #96c93f !important;
+    padding-left: 30px !important;
+  }
+
+  /* Кнопка закрытия */
+  .mobile-menu-close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    line-height: 1;
+    color: #2c3e50;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    z-index: 101;
+    font-weight: 300;
+    opacity: 0;
+    transform: scale(0.8) rotate(-90deg);
+    pointer-events: none;
+  }
+
+  .topmenu__wrap-active .mobile-menu-close {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    pointer-events: auto;
+    transition-delay: 0.3s;
+  }
+
+  .mobile-menu-close:hover {
+    background: #96c93f;
+    color: white;
+    transform: scale(1.1) rotate(90deg);
+    box-shadow: 0 6px 20px rgba(150, 201, 63, 0.4);
+  }
+
+  .mobile-menu-close:active {
+    transform: scale(0.95) rotate(90deg);
+  }
+}
+
+/* === КОНЕЦ УЛУЧШЕНИЙ МОБИЛЬНОГО МЕНЮ === */
+
+/* Скрываем кнопку закрытия меню на desktop */
+@media (min-width: 768px) {
+  .mobile-menu-close {
+    display: none !important;
+  }
+}
+
+/* === Separator between style blocks === */
+
+/* === УЛУЧШЕНИЕ КАРТОЧЕК ПАКЕТОВ КАНАЛОВ НА МОБИЛЬНЫХ === */
+@media (max-width: 767px) {
+  .bl_colV2 {
+    margin-bottom: 20px !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .bl_colV2 .container {
+    padding: 20px 15px !important;
+  }
+
+  /* Логотип */
+  .bl_colV2__logo {
+    margin-bottom: 15px !important;
+  }
+
+  .bl_colV2__logo img {
+    max-height: 80px !important;
+    object-fit: contain !important;
+  }
+
+  /* Описание */
+  .bl_colV2__desc {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 12px !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  /* Список каналов */
+  .bl_colV2__channels {
+    margin-bottom: 15px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
+  }
+
+  .bl_colV2__channelsIco {
+    flex: 0 0 30px !important;
+    max-width: 30px !important;
+  }
+
+  .bl_colV2__channelsTxt {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    flex: 1 !important;
+    max-width: calc(100% - 30px) !important;
+  }
+
+  /* Цена */
+  .bl_colV2__price {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .bl_colV2__priceDim {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    display: block !important;
+    margin-top: 4px !important;
+    opacity: 0.9 !important;
+  }
+
+  /* Кнопка подключить */
+  .bl_colV2 .bl_add2cartBtn {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    padding: 14px 20px !important;
+    border-radius: 8px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  /* Убираем сетку Bootstrap на мобильных */
+  .bl_colV2 .row.justify-content-between {
+    flex-direction: column !important;
+  }
+
+  .bl_colV2 .row.justify-content-between > div {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Упрощаем верхнюю секцию */
+  .bl_colV2 .row.d-flex {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .bl_colV2 .row.d-flex > .col-4,
+  .bl_colV2 .row.d-flex > .col-8 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* === КОНЕЦ УЛУЧШЕНИЙ КАРТОЧЕК === */
+
+/* === Separator between style blocks === */
+
+
+/* === СТИЛИ ДЛЯ АВТОМАТИЧЕСКОГО ВОСПРОИЗВЕДЕНИЯ ВИДЕО В ТАРИФАХ === */
+.bl_colv1__type4Img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+/* Плавные переходы между картинкой и видео */
+.bl_colv1__type4Img {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Видео элемент с плавной анимацией */
+.bl_colv1_type4 video.bl_colv1__type4Img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Класс для видео тарифов с плавным появлением */
+video.tarif-video {
+  animation: fadeInSmooth 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInSmooth {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Анимация исчезновения видео */
+video.tarif-video-fade-out {
+  animation: fadeOutSmooth 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeOutSmooth {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+}
+
+/* Улучшенная тень при воспроизведении видео */
+.bl_colv1_type4:has(video.tarif-video) {
+  box-shadow: 0 12px 45px rgba(150, 201, 63, 0.35);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Контейнер для корректного позиционирования */
+.bl_colv1_type4 {
+  position: relative;
+}
+
+/* Предзагруженные видео скрыты */
+video[style*="display: none"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Оптимизация производительности видео */
+video.tarif-video {
+  will-change: opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+
+/* === Separator between style blocks === */
+
+/* === УЛУЧШЕНИЕ ВИДИМОСТИ ТЕКСТА В СЕКЦИИ ТАРИФОВ === */
+.bl_pg2018101_tarifsWifi h2 {
+  background: rgba(255, 255, 255, 0.95) !important;
+  padding: 20px 30px !important;
+  border-radius: 12px !important;
+  margin: 30px auto !important;
+  max-width: 90% !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+  color: #333 !important;
+  font-weight: 600 !important;
+  font-size: 1.3em !important;
+  line-height: 1.5 !important;
+  text-align: center !important;
+  position: relative !important;
+  z-index: 10 !important;
+  text-shadow: none !important;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+  .bl_pg2018101_tarifsWifi h2 {
+    font-size: 1.1em !important;
+    padding: 15px 20px !important;
+    margin: 20px auto !important;
+  }
+}
+
+/* === КОНЕЦ УЛУЧШЕНИЙ ВИДИМОСТИ === */
+
+/* === УЛУЧШЕНИЕ ЧИТАЕМОСТИ ТАРИФОВ ТВ === */
+/* Названия тарифов ТВ - белый цвет с контрастной тенью */
+.bl_pg2018101_tarifsTv .bl_tarifElem1__heading {
+  color: #ffffff !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background-clip: unset !important;
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    0 0 10px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(0, 0, 0, 0.4) !important;
+  font-weight: 800 !important;
+  letter-spacing: 1px !important;
+}
+
+/* Цены тарифов ТВ - удалено, используется желтый цвет ниже */
+
+/* Количество каналов - белый цвет с контрастной тенью */
+.bl_pg2018101_tarifsTv .bl_tarifElem1__channels {
+  color: #ffffff !important;
+  text-shadow:
+    1px 1px 3px rgba(0, 0, 0, 0.7),
+    0 0 6px rgba(0, 0, 0, 0.5) !important;
+  font-weight: 700 !important;
+}
+
+/* === КОНЕЦ УЛУЧШЕНИЙ ТАРИФОВ ТВ === */
+
+/* === СКРЫТЬ ПЛАШКУ "ПОПУЛЯРНЫЙ ВЫБОР" И ВЫРОВНЯТЬ КНОПКИ === */
+/* Скрываем плашку "Популярный выбор" */
+.bl_tarif.tarif-featured::before {
+  display: none !important;
+}
+
+/* Убираем дополнительные отступы у первой карточки */
+.bl_pg2018101_tarifsWifi .bl_tarif.tarif-featured {
+  margin-bottom: 0 !important;
+}
+
+/* Выравниваем кнопки по нижнему краю одинаково */
+.bl_pg2018101_tarifsWifi .bl_colv1_type4 {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 450px !important;
+}
+
+.bl_pg2018101_tarifsWifi .bl_colv1__type4Img {
+  flex-grow: 1 !important;
+  object-fit: cover !important;
+}
+
+.bl_pg2018101_tarifsWifi .bl_colv1__inner_type4 {
+  margin-top: auto !important;
+  position: relative !important;
+}
+
+.bl_pg2018101_tarifsWifi .bl_colv1__add2cartBtnContainer_type4 {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.bl_pg2018101_tarifsWifi .bl_add2cartBtn_colv1type4 {
+  margin: 0 !important;
+  border-radius: 0 0 12px 12px !important;
+  width: 100% !important;
+  padding: 15px 20px !important;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+  .bl_pg2018101_tarifsWifi .bl_colv1_type4 {
+    min-height: 380px !important;
+  }
+}
+/* === КОНЕЦ ВЫРАВНИВАНИЯ === */
+
+/* === УЛУЧШЕНИЕ ЧИТАЕМОСТИ ЗАГОЛОВКА И ЦЕН ТВ === */
+/* Заголовок секции ТВ - белый с контрастной тенью */
+.bl_pg2018101_tarifsTv .bl_pg2018101__h1 h1 {
+  color: #ffffff !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background-clip: unset !important;
+  text-shadow:
+    3px 3px 6px rgba(0, 0, 0, 0.9),
+    0 0 15px rgba(0, 0, 0, 0.7),
+    0 0 30px rgba(0, 0, 0, 0.5) !important;
+  font-weight: 900 !important;
+  letter-spacing: 2px !important;
+}
+
+/* Цены ТВ - яркий желтый цвет для максимальной контрастности */
+.bl_pg2018101_tarifsTv .bl_tarifElem1__price {
+  color: #FFD700 !important;
+  text-shadow:
+    3px 3px 8px rgba(0, 0, 0, 0.95),
+    0 0 15px rgba(0, 0, 0, 0.9),
+    -2px -2px 0 rgba(0, 0, 0, 1),
+    2px -2px 0 rgba(0, 0, 0, 1),
+    -2px 2px 0 rgba(0, 0, 0, 1),
+    2px 2px 0 rgba(0, 0, 0, 1) !important;
+  font-weight: 900 !important;
+  font-size: 2em !important;
+}
+
+/* Адаптация для мобильных - уменьшаем размер "Эксклюзив" */
+@media (max-width: 768px) {
+  .bl_pg2018101_tarifsTv .bl_tarifElem1__heading {
+    font-size: 1.5em !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  .bl_pg2018101_tarifsTv .bl_tarifElem1__price {
+    font-size: 1.6em !important;
+  }
+
+  /* Для третьей карточки делаем еще меньше */
+  .bl_pg2018101_tarifsTv .bl_pg2018101__col:nth-child(3) .bl_tarifElem1__heading {
+    font-size: 1.3em !important;
+  }
+}
+/* === КОНЕЦ УЛУЧШЕНИЙ ЧИТАЕМОСТИ ТВ === */
+
+.bl_footer2__snoska1{color: #B2B5B9; background-color: transparent; position: relative; line-height: 13px; font-size: 11px;}

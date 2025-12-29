@@ -1,0 +1,38 @@
+.bemlightbox1{
+  position:fixed;
+  overflow: hidden;
+  top:0;
+  left:0;
+  min-width:100%;
+  /*min-height:100%;*/
+  height:100%;
+
+  background-color:rgba(0,0,0,0.9);
+  color:#fff;
+  text-align:center;
+  /*visibility: hidden;*/
+  z-index:2147483648;
+  display: none;
+}
+.bemlightbox1__inner{
+  
+  min-width: 100%;
+  height: 100%;
+  padding:60px;
+  overflow-y:scroll
+
+}
+@media (max-width:600px) {
+  .bemlightbox1__inner{
+    padding:30px
+  }
+}
+
+.bemlightbox1__closeBtn{
+  font-size:40px;
+  cursor: pointer;
+  color:#fff;
+  position:absolute;
+  right:10px;
+  top:10px;
+}

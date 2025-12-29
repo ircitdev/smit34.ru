@@ -1,0 +1,57 @@
+/*region ”ниверсальные модификаторы (без прив€зки к блокам*/
+
+
+.v-margin-30{
+  margin-top:30px;
+  margin-bottom:30px
+}
+
+.placeholder{
+  background-color: #b5db5b;
+  /*width:100%;*/
+  min-height:200px;
+  margin:0 auto;
+  margin-bottom:20px;
+  padding:20px;
+  text-align:center;
+  background-image: url("../../../images/present_sinnaps-crop-u23314%EF%B9%96crc=4237008101.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position:relative
+}
+.placeholder__fader{
+  background-color: #b5db5b;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+.placeholder__con{
+  position:relative
+}
+
+.circle{
+  position:relative;
+  background-color: #fff;
+  width:100%;
+  padding-bottom:100%;
+  border-radius:50%;
+}
+
+.fluidpadding_row>[class*="col-"]{
+  padding-left:3%;
+  padding-right:3%;
+}
+
+
+.vh_center_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*endregion*/

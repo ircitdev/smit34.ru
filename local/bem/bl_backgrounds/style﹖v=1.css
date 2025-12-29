@@ -1,0 +1,58 @@
+.bl_backgrounds{
+  background-size: cover;
+  background-color: #b5db5b;
+  background-attachment: fixed;
+}
+.bl_backgrounds_attachementLocal{
+  background-size: cover;
+  background-attachment: local;
+}
+.bl_backgrounds__bgFader{
+  position:absolute;
+  top:0;left:0;
+  width:100%;
+  height:100%;
+  background:rgba( 0, 0, 0, 0.5 );
+}
+.bl_backgrounds__greenShrads{
+  background-image:url(images/green_shrads.jpg);
+
+}
+.bl_backgrounds__bgWifi1{
+  background-image:url(images/bg_wifi1_2.jpg);
+}
+
+.bl_backgrounds__gradient1{
+  background-image: linear-gradient(-134deg,#0083ff 0,#d582ff 100%);
+  /*background-image: linear-gradient(0deg,#484e5d 0,#343c50 100%);*/
+  background-color: #343c50;
+  color:#fff
+}
+.bl_backgrounds__fiberOptic1{
+  background-image:url(images/bg_fiber1.png);
+  background-color: #347ee8;
+  /*color:#fff*/
+}
+.bl_backgrounds__tv1{
+  background-image:url(images/bg_tv1.jpg);
+  background-color: #957f90;
+}
+
+
+.bl_backgrounds__bgWifi500px{
+  background-image:url(images/bg_wifi1_2_500px.jpg);
+
+}
+
+.bl_backgrounds__bgEth500px{
+  background-image:url(images/bg_fiber2_500px.jpg);
+
+}
+
+.bl_backgrounds__bgTv500px{
+  background-image:url(images/bg_tv1_500px.jpg);
+}
+
+.bl_backgrounds__bgCctv500px{
+  background-image:url(images/bg_video_500px.jpg);
+}

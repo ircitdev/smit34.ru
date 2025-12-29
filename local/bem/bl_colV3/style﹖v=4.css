@@ -1,0 +1,17 @@
+/*region bl_colv3*/
+
+
+.bl_colv3{
+  border:0.5px solid grey;
+  border-radius:8px;
+  padding:11px;
+  height:100%
+}
+.bl_colv3__txtcon{
+
+}
+.bl_colv3__icocon{
+  flex: 0 0 80px;
+}
+
+/*endregion*/
