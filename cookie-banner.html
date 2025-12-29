@@ -1,0 +1,99 @@
+<!-- Cookie Banner -->
+<div id="cookie-banner" style="display: none; position: fixed; bottom: 20px; right: 20px; max-width: 400px; background-color: #ffffff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); padding: 20px; z-index: 10000; font-family: Arial, sans-serif;">
+    <div style="display: flex; align-items: flex-start; gap: 15px;">
+        <div style="font-size: 32px;">🍪</div>
+        <div style="flex: 1;">
+            <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #333;">Мы используем файлы cookie</h3>
+            <p style="margin: 0 0 15px 0; font-size: 14px; color: #666; line-height: 1.4;">
+                Этот сайт использует cookie для улучшения работы и удобства пользователей. Продолжая использовать сайт, вы соглашаетесь с использованием cookie.
+            </p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <button onclick="acceptCookies()" style="background-color: #96c93f; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: 600;">
+                    Принять
+                </button>
+                <button onclick="closeCookieBanner()" style="background-color: #f5f5f5; color: #666; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 14px;">
+                    Закрыть
+                </button>
+            </div>
+        </div>
+        <button onclick="closeCookieBanner()" style="background: none; border: none; font-size: 20px; color: #999; cursor: pointer; padding: 0; line-height: 1;">×</button>
+    </div>
+</div>
+
+<script>
+// Функция для показа баннера cookie
+function showCookieBanner() {
+    // Проверяем, был ли уже принят cookie
+    if (!localStorage.getItem('cookieAccepted')) {
+        // Показываем баннер через 10 секунд
+        setTimeout(function() {
+            document.getElementById('cookie-banner').style.display = 'block';
+            // Добавляем анимацию появления
+            document.getElementById('cookie-banner').style.animation = 'slideInUp 0.5s ease-out';
+        }, 10000);
+    }
+}
+
+// Функция принятия cookie
+function acceptCookies() {
+    localStorage.setItem('cookieAccepted', 'true');
+    closeCookieBanner();
+}
+
+// Функция закрытия баннера
+function closeCookieBanner() {
+    var banner = document.getElementById('cookie-banner');
+    banner.style.animation = 'slideOutDown 0.3s ease-in';
+    setTimeout(function() {
+        banner.style.display = 'none';
+    }, 300);
+}
+
+// Запускаем показ баннера при загрузке страницы
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', showCookieBanner);
+} else {
+    showCookieBanner();
+}
+</script>
+
+<style>
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutDown {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 480px) {
+    #cookie-banner {
+        bottom: 10px !important;
+        right: 10px !important;
+        left: 10px !important;
+        max-width: none !important;
+    }
+}
+
+/* Эффект при наведении на кнопки */
+#cookie-banner button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
+</style>
